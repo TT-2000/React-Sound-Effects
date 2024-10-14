@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background: #333;
+  // scrollbar-color: hsla(0, 0%, 100%, 0.4) transparent;
+}
+
+body {
+  letter-spacing: 0.5px;
+}
+
+:root {
+  // color
+  --color-white: #fff;
+  --color-black: #111;
+  --color-gray: #989595;
+  --color-white-low: #dfdbdb;
+  --color-icons-white: #e8e3e3;
+  --color-rain-1: #9cc1d3c0;
+  --color-rain-2: rgba(123, 111, 111, 0.837);
+  --color-icons-volume: #333;
+
+  // background
+  --background-rain: #00000033;
+  --background-current-song: rgb(90, 54, 54);
+  --background-current-song-show-all: rgba(61, 47, 47, 0.536);
+  --background-current-song-hover: rgba(61, 47, 47, 0.536);
+
+  --bg-item-song-active: rgba(230, 40, 56, 0.491);
+  --bg-item-song-hover: rgba(35, 39, 38, 0.707);
+  --bg-bar-volume: rgba(186, 147, 147, 0.481);
+  --bg-thumb-volume: #fff;
+  --bg-appearance-volume: rgb(255, 0, 0);
+  --bg-black: rgb(28, 26, 26);
+  --bg-button-header: rgba(58, 47, 47, 0.606);
+  --bg-button-header-hover: #666161b1;
+
+  // shadow
+  --image-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  --text-title-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  --box-shadow-current-song: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  --button-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  --inset-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+  // font-size
+  --16px: 1.6rem;
+
+  --15px: 1.5rem;
+  --14px: 1.4rem;
+  --12px: 1.2rem;
+  --13px: 1.3rem;
+  --11px: 1.1rem;
+  --10px: 1rem;
+  --9px: 0.9rem;
+  --8px: 0.8rem;
+  --7px: 0.7rem;
+  --6px: 0.6rem;
+  --5px: 0.5rem;
+  // border
+
+  --size-thumb-volume: 22px;
+
+  --border-button-play-control: 1.6px solid #c1bcbc;
+
+  --height-playing: 80px;
+}
+
+button {
+  outline: none;
+  border: none;
+  user-select: none;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+h4 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+video {
+  object-fit: fill;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none; /* Cho các trình duyệt WebKit (như Safari, Chrome) */
+  -webkit-touch-callout: none; /* Ngăn chặn menu gọi ra khi chạm và giữ */
+}

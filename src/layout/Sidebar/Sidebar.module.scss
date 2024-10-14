@@ -1,0 +1,99 @@
+.wrapper {
+  height: 100vh;
+  width: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  border-radius: 100px;
+  background: #1c2329b8;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 69.5px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s linear;
+    // overflow: hidden;
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+
+      span {
+        svg {
+          color: var(--color-white);
+        }
+      }
+    }
+
+    &.active {
+      background-color: rgba(75, 66, 66, 0.572);
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      margin: 0 auto;
+      width: 80%;
+      height: 0.5px;
+      transition: 0.3s linear;
+      background: var(--color-white-low);
+    }
+
+    &:first-child {
+      height: 70px;
+      &::after {
+        display: none;
+      }
+    }
+
+    svg {
+      transition: 0.3s linear;
+      color: var(--color-white-low);
+      font-size: var(--13px);
+    }
+  }
+
+  .image:hover + .playlist {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  .image.active + .playlist {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  .playlist:hover + .option_volumn {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  .playlist.active + .option_volumn {
+    &::after {
+      width: 100%;
+    }
+  }
+}

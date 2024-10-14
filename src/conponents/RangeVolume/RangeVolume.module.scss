@@ -1,0 +1,70 @@
+.wrapper {
+  width: 100%;
+  min-width: 120px;
+  height: 10px;
+  position: relative;
+  user-select: none;
+
+  &.active {
+    .thumb {
+      background-color: var(--bg-black);
+
+      svg {
+        color: var(--color-white) !important;
+      }
+    }
+  }
+
+  &:hover {
+    .thumb {
+      background-color: var(--bg-black);
+
+      svg {
+        color: var(--color-white) !important;
+      }
+    }
+  }
+
+  .bar {
+    border-radius: 10px;
+    background-color: var(--bg-bar-volume);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    box-shadow: var(--inset-shadow);
+  }
+  .thumb {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: var(--size-thumb-volume);
+    width: var(--size-thumb-volume);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-thumb-volume);
+    z-index: 9999;
+    box-shadow: var(--button-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s linear;
+
+    svg {
+      transition: color 0.2s linear;
+      font-size: var(--9px);
+      color: var(--color-icons-volume) !important;
+    }
+  }
+
+  .appearance {
+    position: absolute;
+    background-color: var(--bg-appearance-volume);
+    height: 100%;
+    width: 0%;
+    left: 0%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 999;
+  }
+}
